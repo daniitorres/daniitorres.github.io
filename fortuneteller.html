@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+
+
+
+
+<html>
+
+
+<style>
+
+
+input[type=text], select {
+
+
+width: 100%;
+
+
+padding: 12px 20px;
+
+
+margin: 10px 0;
+
+
+display: inline-block;
+
+
+border: 1px solid #ccc;
+
+
+border-radius: 6px;
+
+
+box-sizing: border-box;
+
+
+}
+
+
+div {
+
+
+border-radius: 5px;
+
+
+background-color: #F5F5F5;
+
+
+padding: 18px;
+
+
+}
+
+
+</style>
+
+
+<body>
+
+
+<div>
+
+
+Number of Kids: <input type="text" id="numKids">
+
+
+Partner Name :<input type="text" id="partner">
+
+
+Geographic location :<input type="text" id="geolocation">
+
+
+Job Title :<input type="text" id="jobTitle">
+
+
+<p>Click the button to display your fortune</p>
+
+
+<button onclick="myFunction()" type="submit">Check Your Fortune</button>
+
+
+<p id="demo"></p>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+function myFunction() {
+
+
+var numKids = document.getElementById("numKids").value;
+
+
+var partner = document.getElementById("partner").value;
+
+
+var geolocation = document.getElementById("geolocation").value;
+
+
+var jobTitle = document.getElementById("jobTitle").value;
+
+
+
+
+
+
+var fortune = 'You will be a X '+jobTitle+' in Y'+geolocation+', and married to Z'+partner+ ' with N'+numKids+ ' kids.';
+
+
+document.getElementById("demo").innerHTML = fortune;}
+
+
+
+
+
+
+{var fortune = 'You will be a cop in Georgia, and married to Anna with 5 kids.';
+
+
+document.getElementById("demo").innerHTML = fortune;}
+
+
+
+
+
+
+{var fortune = 'You will be a doctor in Dallas, and married to Maria with 2 kids.';
+
+
+document.getElementById("demo").innerHTML = fortune;}
+
+
+
+
+
+
+{var fortune = 'You will be a teacher in Tennesse, and married to Hunter with 1 kid.';
+
+
+document.getElementById("demo").innerHTML = fortune;}
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</div>
+
+
+</body>
+
+
+</html>
